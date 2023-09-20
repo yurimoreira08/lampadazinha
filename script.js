@@ -15,16 +15,13 @@ lamp1.addEventListener('click', () => {
 
 // Ligar/desligar lâmpada 2 quando o mouse passar sobre ela
 let lamp2Ligada = false;
-lamp2.addEventListener('mouse', () => {
+lamp2.addEventListener('mouseout', () => {
   if (!lamp2Ligada) {
     lamp2.src = 'lampada-on.jpg';
     lamp2Ligada = true;
-  }
-});
-
-lamp2.addEventListener('mouseout', () => {
-  if (lamp2Ligada) {
+  }else{
     lamp2.src = 'lampada.jpg';
     lamp2Ligada = false;
   }
 });
+
